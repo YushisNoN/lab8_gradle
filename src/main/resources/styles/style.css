@@ -1,0 +1,148 @@
+.welcomeMessage {
+    -fx-font-family: Bahnschrift;
+    -fx-font-weight: bolder;
+    -fx-font-size: 18px;
+}
+
+.usernameField {
+    -fx-font-family: Bahnschrift;
+    -fx-font-size: 12px;
+    -fx-background-radius: 15;  /* Скругляем углы фона */
+    -fx-border-radius: 15;     /* Не работает в JavaFX, но мы используем background */
+    -fx-border-color: #a0a0a0;
+    -fx-border-width: 1;
+    -fx-padding: 5 10;        /* Отступы внутри поля */
+
+    /* Дополнительные стили для красоты */
+    -fx-background-color: -fx-control-inner-background;
+    -fx-background-insets: 0;
+    -fx-prompt-text-fill: derive(-fx-control-inner-background, -30%);
+}
+
+.addButton-false {
+    -fx-font-family: Bahnschrift;
+    -fx-font-size: 14px;
+    -fx-font-weight: bolder;
+    -fx-text-fill: white;
+    -fx-background-radius: 15;  /* Скругляем углы фона */
+    -fx-border-radius: 15;     /* Не работает в JavaFX, но мы используем background */
+
+    -fx-border-color: #dd2929;
+    -fx-border-width: 1;
+    -fx-padding: 5 10;        /* Отступы внутри поля */
+
+    /* Дополнительные стили для красоты */
+
+    -fx-background-insets: 0;
+    -fx-prompt-text-fill: derive(-fx-control-inner-background, -30%);
+    -fx-background-color: #dd2929;
+}
+
+.addButton-true {
+    -fx-font-family: Bahnschrift;
+    -fx-font-size: 14px;
+    -fx-font-weight: bolder;
+    -fx-text-fill: white;
+    -fx-background-radius: 15;  /* Скругляем углы фона */
+    -fx-border-radius: 15;     /* Не работает в JavaFX, но мы используем background */
+
+    -fx-border-color: #3fdd29;
+    -fx-border-width: 1;
+    -fx-padding: 5 10;        /* Отступы внутри поля */
+
+    /* Дополнительные стили для красоты */
+
+    -fx-background-insets: 0;
+    -fx-prompt-text-fill: derive(-fx-control-inner-background, -30%);
+    -fx-background-color: #3fdd29;
+}
+
+.signIn {
+    -fx-font-family: Bahnschrift;
+    -fx-font-size: 14px;
+    -fx-font-weight: bolder;
+    -fx-text-fill: white;
+    -fx-background-color: #010c2a;
+    -fx-background-radius: 15;  /* Скругляем углы фона */
+    -fx-border-radius: 15;     /* Не работает в JavaFX, но мы используем background */
+
+    -fx-border-color: #010c2a;
+    -fx-border-width: 1;
+    -fx-padding: 5 10;        /* Отступы внутри поля */
+
+    /* Дополнительные стили для красоты */
+
+    -fx-background-insets: 0;
+    -fx-prompt-text-fill: derive(-fx-control-inner-background, -30%);
+}
+
+.username {
+    -fx-font-family: "Bahnschrift";
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-fill: #010c2a;
+}
+
+.unitOfMeasure {
+    -fx-font-family: Bahnschrift;
+    -fx-font-size: 12px;
+    -fx-font-weight: bolder;
+    -fx-text-fill: white;
+    -fx-background-color: #010c2a;
+    -fx-background-radius: 15;  /* Скругляем углы фона */
+    -fx-border-radius: 15;
+    -fx-border-color: #010c2a;
+    -fx-border-width: 1;
+    -fx-padding: 5 10;
+    -fx-background-insets: 0;
+    -fx-prompt-text-fill: derive(-fx-control-inner-background, -30%);
+}
+.combo-box {
+    -fx-text-fill: #010c2a; /* Цвет текста в выпадающем списке */
+}
+
+.combo-box .list-cell {
+    -fx-text-fill: white; /* Цвет текста в выбранной ячейке */
+}
+
+.combo-box .list-view .list-cell {
+    -fx-text-fill: #010c2a;; /* Цвет текста в выпадающем меню */
+}
+
+.delButton-false {
+    -fx-font-family: Bahnschrift;
+    -fx-font-size: 14px;
+    -fx-font-weight: bolder;
+    -fx-text-fill: white;
+    -fx-background-radius: 15;  /* Скругляем углы фона */
+    -fx-border-radius: 15;     /* Не работает в JavaFX, но мы используем background */
+
+    -fx-border-color: #7b7a7a;
+    -fx-border-width: 1;
+    -fx-padding: 5 10;        /* Отступы внутри поля */
+
+    /* Дополнительные стили для красоты */
+
+    -fx-background-insets: 0;
+    -fx-prompt-text-fill: derive(-fx-control-inner-background, -30%);
+    -fx-background-color: #7b7a7a;
+}
+
+.delButton-true {
+    -fx-font-family: Bahnschrift;
+    -fx-font-size: 14px;
+    -fx-font-weight: bolder;
+    -fx-text-fill: white;
+    -fx-background-radius: 15;  /* Скругляем углы фона */
+    -fx-border-radius: 15;     /* Не работает в JavaFX, но мы используем background */
+
+    -fx-border-color: #dd2929;
+    -fx-border-width: 1;
+    -fx-padding: 5 10;        /* Отступы внутри поля */
+
+    /* Дополнительные стили для красоты */
+
+    -fx-background-insets: 0;
+    -fx-prompt-text-fill: derive(-fx-control-inner-background, -30%);
+    -fx-background-color: #dd2929;
+}
