@@ -1,0 +1,51 @@
+plugins {
+    id 'java'
+    id 'com.github.johnrengelman.shadow' version '8.1.1'
+    id 'org.openjfx.javafxplugin' version '0.1.0'
+    id 'application'
+}
+
+group = 'org.example'
+version = '1.0-SNAPSHOT'
+mainClassName = 'org.example.Main'
+repositories {
+    mavenCentral()
+}
+javafx {
+    version = "17.0.2"
+    modules = [ 'javafx.controls' ]
+}
+sourceSets {
+    main {
+        resources {
+            srcDirs = ['src/main/resources']
+        }
+    }
+}
+
+        dependencies {
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.15.0'
+    implementation 'com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.15.0'
+    implementation 'org.hibernate.validator:hibernate-validator:8.0.1.Final'
+    implementation 'jakarta.validation:jakarta.validation-api:3.0.2'
+    implementation 'org.glassfish:jakarta.el:4.0.2'
+    implementation 'jakarta.persistence:jakarta.persistence-api:3.2.0'
+
+    implementation 'org.openjfx:javafx-controls:17.0.2'
+    implementation 'org.openjfx:javafx-graphics:17.0.2'
+    implementation 'org.openjfx:javafx-base:17.0.2'
+}
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+shadowJar {
+    archiveClassifier.set('all') // Добавляет суффикс "-all" к имени JAR-файла
+    mergeServiceFiles()
+    manifest {
+        attributes 'Main-Class': 'org.example.Main' // Укажи свой главный класс
+    }
+}
+
+test {
+    useJUnitPlatform()
+}
